@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:id="@+id/layout_report_item"
+    android:background="@drawable/background_item"
+    android:orientation="vertical"
+    >
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <!-- luogo del report -->
+            <TextView
+                android:id="@+id/report_place_name"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="luogo report"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:fontFamily="@font/ubuntu_bold"
+                android:maxLines="2"
+                android:gravity="left"
+                android:textColor="@color/color_white"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/priority_symbol"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_priority_high_24"
+                android:layout_gravity="center"
+
+                android:layout_margin="5dp"
+                />
+
+        </LinearLayout>
+
+        <!-- tipo di problema -->
+        <TextView
+            android:id="@+id/report_kind_of_problem"
+
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tipo problema"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:fontFamily="@font/ubuntu_regular"
+            android:maxLines="2"
+            android:gravity="left"
+
+            android:textColor="@color/color_text_subtitle"
+            />
+
+        <!-- data ed ora -->
+        <TextView
+            android:id="@+id/report_datetime"
+
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24/02/2022 09:41"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:fontFamily="@font/ubuntu_regular"
+            android:maxLines="2"
+            android:gravity="left"
+
+            android:textColor="@color/color_text_subtitle"
+            />
+
+
+
+    </LinearLayout>
+
+    <!-- immagine se presente -->
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/image_from_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        app:riv_corner_radius="10dp"
+        android:layout_margin="10dp"
+        />
+
+</LinearLayout>

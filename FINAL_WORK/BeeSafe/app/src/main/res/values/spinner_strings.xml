@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="kind_of_problem_array">
+        <item>Salute</item>
+        <item>Furto</item>
+        <item>Violenza</item>
+        <item>Incendio</item>
+        <item>Incidente Stradale</item>
+    </string-array>
+</resources>

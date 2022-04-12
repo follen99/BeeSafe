@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BeeSafe</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="API_KEY">AIzaSyDdMZpsuRS3rrjvPfrVhRc7GIch97J4gkg</string>
+    <string name="is_admin">Sei un Amministratore!</string>
+    <string name="modify_password">Modifica password</string>
+    <string name="logout">Logout</string>
+    <string name="title_activity_general_maps_view">GeneralMapsView</string>
+    <string name="center_map">centra</string>
+    <string name="focus_on_pin">focus</string>
+    <string name="salute">Salute</string>
+    <string name="furto">Furto</string>
+    <string name="violenza">Violenza</string>
+    <string name="incendio">Incendio</string>
+    <string name="incidente_stradale">Incidente stradale</string>
+</resources>

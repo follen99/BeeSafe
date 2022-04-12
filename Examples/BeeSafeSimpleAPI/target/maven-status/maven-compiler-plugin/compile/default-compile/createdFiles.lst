@@ -1,0 +1,13 @@
+it\ranauro\beesafe\backend\HttpServerVerticle.class
+it\ranauro\beesafe\backend\model\Report.class
+it\ranauro\beesafe\backend\api\DefaultApiHandler.class
+it\ranauro\beesafe\backend\ApiResponse.class
+it\ranauro\beesafe\backend\api\DefaultApiHandler$1.class
+it\ranauro\beesafe\backend\control\ShowFirebaseDbChanges$1.class
+it\ranauro\beesafe\backend\api\DefaultApiImpl.class
+it\ranauro\beesafe\backend\api\DefaultApi.class
+it\ranauro\beesafe\backend\control\ShowFirebaseDbChanges.class
+it\ranauro\beesafe\backend\utils\ReportUtils.class
+it\ranauro\beesafe\backend\model\MongoLogin.class
+it\ranauro\beesafe\backend\control\FirebaseService.class
+it\ranauro\beesafe\backend\control\MongoManager.class

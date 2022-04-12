@@ -1,0 +1,11 @@
+it\ranauro\backend\model\PetAllOf.class
+it\ranauro\backend\model\Pet.class
+it\ranauro\backend\api\DefaultApiImpl.class
+it\ranauro\backend\HttpServerVerticle.class
+it\ranauro\backend\ApiResponse.class
+it\ranauro\backend\api\DefaultApiHandler.class
+it\ranauro\backend\model\Error.class
+it\ranauro\backend\api\DefaultApiHandler$1.class
+it\ranauro\backend\api\DefaultApi.class
+it\ranauro\backend\api\DefaultApiHandler$2.class
+it\ranauro\backend\model\NewPet.class

@@ -1,0 +1,1 @@
+java -jar openapi-generator-cli.jar generate -g java-vertx-web -i BeeSafe.yaml -o $PWD -p groupId=it.ranauro -p artifactVersion=1.0.0-SNAPSHOT -p basePackage=it.ranauro.beesafe.backend -p apiPackage=it.ranauro.beesafe.backend.api -p modelPackage=it.ranauro.beesafe.backend.model 

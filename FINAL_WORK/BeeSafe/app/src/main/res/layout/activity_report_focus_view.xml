@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportFocusViewActivity"
+    android:background="@color/color_primary"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/focus_back_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="20dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_back"
+
+            app:tint="@color/color_accent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+        <TextView
+            app:layout_constraintTop_toBottomOf="@id/focus_back_button"
+            android:layout_margin="20dp"
+
+            android:id="@+id/focus_report_place_name"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Questo è il luogo della nota molto lungo"
+
+            android:fontFamily="@font/ubuntu_bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/color_accent"
+            />
+
+        <TextView
+            app:layout_constraintTop_toBottomOf="@id/focus_report_place_name"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            android:id="@+id/focus_date"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+
+            android:textColor="@color/colorIcons"
+            android:fontFamily="@font/ubuntu_regular"
+
+
+            android:text="Friday, 04 March 2022 20:57 PM"
+            />
+
+        <TextView
+            app:layout_constraintTop_toBottomOf="@id/focus_date"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+
+
+            android:fontFamily="@font/ubuntu_medium"
+            android:textColor="@color/colorIcons"
+
+            android:text="questa è la descrizione del report di massimo 100 caratteri che potrebbe avvenire su più piani"
+
+            android:id="@+id/focus_problem_description"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/urgency_layout"
+            android:orientation="horizontal"
+
+            app:layout_constraintTop_toBottomOf="@id/focus_problem_description"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_urgency_time"
+                app:tint="@color/color_accent"
+                />
+
+            <TextView
+                android:id="@+id/focus_urgency_message"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Urgenza: 5/10"
+                android:textColor="@color/colorIcons"
+                android:fontFamily="@font/ubuntu_medium"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/priority_layout"
+
+            android:orientation="horizontal"
+
+            app:layout_constraintTop_toBottomOf="@id/urgency_layout"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="20dp"
+
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_priority_list"
+                app:tint="@color/color_accent"
+                />
+
+            <TextView
+                android:id="@+id/focus_priority_message"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Priorità: 10/10"
+                android:textColor="@color/colorIcons"
+                android:fontFamily="@font/ubuntu_medium"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/kind_of_problem_layout"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toBottomOf="@id/priority_layout"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            android:layout_margin="20dp"
+
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_kind_of_problem"
+                app:tint="@color/color_accent"
+                />
+
+            <TextView
+                android:id="@+id/focus_kind_of_problem_message"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo di emergenza: Violenza"
+                android:textColor="@color/colorIcons"
+                android:fontFamily="@font/ubuntu_medium"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/open_in_maps_layout"
+
+            android:orientation="horizontal"
+
+            app:layout_constraintTop_toBottomOf="@id/kind_of_problem_layout"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="20dp"
+
+
+
+            android:padding="2dp"
+
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_map_24"
+                app:tint="@color/color_accent"
+                />
+
+            <TextView
+                android:id="@+id/focus_open_in_maps"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:gravity="center"
+                android:text="Apri nelle mappe"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+                android:textColor="@color/colorIcons" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/focus_number_to_call"
+
+            android:orientation="horizontal"
+
+            app:layout_constraintTop_toBottomOf="@id/open_in_maps_layout"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="20dp"
+
+
+
+            android:padding="2dp"
+
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_local_phone_24"
+                app:tint="@color/color_accent"
+                />
+
+            <TextView
+                android:id="@+id/focus_number_to_call_text"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/ubuntu_medium"
+                android:gravity="center"
+                android:text="1402384459"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+                android:textColor="@color/colorIcons" />
+
+        </LinearLayout>
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/focus_image"
+
+            app:layout_constraintTop_toBottomOf="@id/focus_number_to_call"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="20dp"
+
+            android:layout_gravity="center"
+
+            app:riv_corner_radius="20dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="report_image"
+
+            android:visibility="gone"
+
+            android:paddingBottom="30dp"
+            />
+
+        <ProgressBar
+            app:layout_constraintTop_toBottomOf="@id/open_in_maps_layout"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            android:layout_marginTop="60dp"
+
+            android:id="@+id/focus_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/color_accent"
+
+            android:visibility="gone"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</ScrollView>

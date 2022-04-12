@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_item"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:elevation="5dp"
+    >
+
+    <TextView
+        android:id="@+id/logs_expanded_from_user"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log author"
+        android:fontFamily="@font/ubuntu_bold"
+        android:textColor="@color/color_accent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+        android:layout_margin="10dp"
+        />
+
+    <!--
+    <ImageView
+        android:id="@+id/logs_is_admin_full"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/ic_admin"
+        app:tint="@color/color_accent"
+        android:layout_margin="10dp"
+
+
+        />
+        -->
+
+    <TextView
+        android:id="@+id/logs_expanded_date_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/logs_expanded_from_user"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:text="questa è la data lunga"
+        android:textColor="@color/colorIcons"
+        android:layout_marginLeft="10dp"
+
+        android:fontFamily="@font/ubuntu_regular"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+        />
+
+    <TextView
+        android:id="@+id/logs_request_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/logs_expanded_date_time"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:text="Richiesta: GET"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+
+        android:textColor="@color/color_white"
+        android:fontFamily="@font/ubuntu_regular"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        />
+
+    <TextView
+        android:id="@+id/logs_request_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/logs_request_type"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:text="Risultato: SUCCESS"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+
+        android:textColor="@color/color_white"
+        android:fontFamily="@font/ubuntu_regular"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        />
+
+    <TextView
+        android:id="@+id/logs_request_operation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/logs_request_result"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:text="Operazione: READ_ALL"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dp"
+
+        android:textColor="@color/color_white"
+        android:fontFamily="@font/ubuntu_regular"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

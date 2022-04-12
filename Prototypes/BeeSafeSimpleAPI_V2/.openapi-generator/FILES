@@ -1,0 +1,10 @@
+.openapi-generator-ignore
+README.md
+pom.xml
+src/main/java/it/ranauro/beesafe/backend/ApiResponse.java
+src/main/java/it/ranauro/beesafe/backend/HttpServerVerticle.java
+src/main/java/it/ranauro/beesafe/backend/api/DefaultApi.java
+src/main/java/it/ranauro/beesafe/backend/api/DefaultApiHandler.java
+src/main/java/it/ranauro/beesafe/backend/api/DefaultApiImpl.java
+src/main/java/it/ranauro/beesafe/backend/model/Report.java
+src/main/resources/openapi.yaml

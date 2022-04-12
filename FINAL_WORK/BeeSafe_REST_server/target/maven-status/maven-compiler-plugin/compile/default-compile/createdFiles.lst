@@ -1,0 +1,9 @@
+it\ranauro\beesafe\backend\utils\exceptions\NotAuthenticatedException.class
+it\ranauro\beesafe\backend\utils\Constants.class
+it\ranauro\beesafe\backend\utils\exceptions\NotAuthorizatedException.class
+it\ranauro\beesafe\backend\model\MongoLogin.class
+it\ranauro\beesafe\backend\model\User.class
+it\ranauro\beesafe\backend\utils\ReportUtils.class
+it\ranauro\beesafe\backend\control\FirebaseService.class
+it\ranauro\beesafe\backend\control\MongoManager.class
+it\ranauro\beesafe\backend\utils\listeners\OnGetDataListener.class

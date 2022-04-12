@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_primary"
+    tools:context=".AddReportActivity"
+    android:id="@+id/mainLayout"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/navigation_layout"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="15dp"
+        android:background="@color/color_primary_dark"
+        android:paddingBottom="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="12dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_back"
+
+            app:tint="@color/color_accent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/imageBack"
+            app:layout_constraintRight_toLeftOf="@id/imageSave"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:gravity="center"
+            android:text="Aggiungi Segnalazione"
+            android:textColor="@color/color_accent"
+            android:fontFamily="@font/ubuntu_medium"
+
+
+            />
+
+
+        <ImageView
+            android:id="@+id/imageSave"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="12dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_done"
+            android:outlineSpotShadowColor="@color/colorIcons"
+            app:layout_constraintBottom_toBottomOf="@id/imageBack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="@color/color_accent"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <ProgressBar
+            android:id="@+id/save_progress_bar"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/imageBack"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            android:maxHeight="30dp"
+            android:minHeight="30dp"
+            android:maxWidth="30dp"
+            android:minWidth="30dp"
+
+            android:layout_marginEnd="12dp"
+
+            android:indeterminateTint="@color/color_accent"
+
+            android:visibility="gone"
+
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/navigation_layout"
+        android:id="@+id/scroll_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:clipToPadding="false"
+        android:paddingBottom="10dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            >
+
+
+            <EditText
+                app:layout_constraintBaseline_toTopOf="parent"
+                android:id="@+id/input_report_title"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+
+                android:background="@null"
+                android:fontFamily="@font/ubuntu_bold"
+                android:hint="Luogo"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+
+                android:includeFontPadding="false"
+                android:inputType="text"
+                android:textColor="@color/color_white"
+                android:textColorHint="@color/color_text_hint"
+                android:textSize="32dp"
+                />
+
+            <TextView
+                android:id="@+id/textDateTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu_regular"
+                android:textColor="@color/colorIcons"
+                android:textSize="10dp"
+                app:layout_constraintEnd_toEndOf="@id/input_report_title"
+                app:layout_constraintStart_toStartOf="@id/input_report_title"
+                app:layout_constraintTop_toBottomOf="@id/input_report_title"
+
+                />
+
+
+
+
+            <!-- corpo della nota -->
+            <EditText
+                android:id="@+id/input_report_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="15dp"
+
+                android:background="@null"
+                android:fontFamily="@font/ubuntu_regular"
+                android:gravity="top"
+                android:hint="Descrizione del problema"
+                android:importantForAutofill="no"
+                android:includeFontPadding="false"
+                android:inputType="textMultiLine"
+                android:minHeight="100dp"
+                android:textColor="@color/color_white"
+                android:textColorHint="@color/color_text_hint"
+                android:textSize="18dp"
+                android:maxLines="5"
+                android:maxLength="100"
+
+
+                app:layout_constraintBottom_toBottomOf="@id/priority_layout"
+                app:layout_constraintTop_toBottomOf="@id/input_report_title"
+
+                />
+
+
+            <LinearLayout
+                android:id="@+id/priority_layout"
+                app:layout_constraintTop_toBottomOf="@id/input_report_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/input_priority_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Priorità: 1"
+                    android:textColor="@color/color_white"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:paddingBottom="10dp"
+                    />
+
+                <!-- seekbar per la gravità -->
+                <SeekBar
+                    android:id="@+id/input_priority_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:progressTint="@color/color_white"
+                    android:thumbTint="@color/color_accent"
+                    android:progressBackgroundTint="@color/color_text_hint"
+
+                    />
+
+            </LinearLayout>
+
+            <!-- seekbar per l'urgenza -->
+            <LinearLayout
+                android:id="@+id/urgency_layout"
+                app:layout_constraintTop_toBottomOf="@id/priority_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/input_urgency_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Urgenza: 1"
+                    android:textColor="@color/color_white"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:paddingBottom="10dp"
+                    />
+
+                <!-- seekbar per la gravità -->
+                <SeekBar
+                    android:id="@+id/input_urgency_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:progressTint="@color/color_white"
+                    android:thumbTint="@color/color_accent"
+                    android:progressBackgroundTint="@color/color_text_hint"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/urgency_layout"
+                >
+
+                <LinearLayout
+
+
+                    android:id="@+id/image_kind_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+
+
+
+                    <LinearLayout
+                        android:id="@+id/add_image_button"
+
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/background_subtitle_indicator"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        >
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_image_24"
+                            app:tint="@color/white"
+                            android:paddingRight="10dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Aggiungi Immagine"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_default_note"
+                            style="@style/TextAppearance.AppCompat.Medium"
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                    <Spinner
+                        android:id="@+id/input_kind_spinner"
+
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/kind_of_problem_array"
+
+                        android:foregroundTint="@color/white"
+                        android:backgroundTint="@color/white"
+                        android:background="@drawable/background_subtitle_indicator"
+
+                        android:layout_margin="10dp"
+                        android:padding="2dp"
+
+                        android:layout_gravity="center"
+                        android:gravity="center"
+
+                        />
+
+
+
+
+                </LinearLayout>
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/picked_image"
+
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="12dp"
+
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:visibility="gone"
+
+                    app:riv_corner_radius="12dp"
+
+                    android:layout_gravity="center"
+
+
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+    <!-- <include layout="@layout/layout_miscellaneous"/> -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

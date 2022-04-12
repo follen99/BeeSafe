@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogsView"
+    android:background="@color/color_primary"
+    android:animateLayoutChanges="true"
+
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/navigation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+
+        <ImageView
+            android:id="@+id/logs_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/navigation_layout"
+
+            android:src="@drawable/ic_back"
+            android:layout_margin="10dp"
+
+            app:tint="@color/color_accent"
+
+            />
+
+        <TextView
+            android:id="@+id/logs_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity Logs"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/navigation_layout"
+
+            android:textColor="@color/color_accent"
+            android:fontFamily="@font/ubuntu_bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            />
+
+        <ImageView
+            android:id="@+id/logs_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/navigation_layout"
+
+            android:src="@drawable/ic_baseline_refresh_24"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+
+            app:tint="@color/color_accent"
+
+            />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/navigation_layout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_layout"
+        android:orientation="horizontal"
+        >
+
+
+
+        <EditText
+            android:id="@+id/search_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:fontFamily="@font/ubuntu_regular"
+
+            android:background="@drawable/background_search"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+
+            android:hint="Cerca utente per email"
+            android:textColorHint="@color/color_text_hint"
+
+            android:textColor="@color/color_search_icon"
+
+            android:inputType="textEmailAddress"
+            />
+
+
+
+
+
+        <ImageView
+            android:id="@+id/logs_search_button"
+
+            app:layout_constraintTop_toBottomOf="@id/navigation_layout"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/search_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/ic_baseline_search_24"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+
+
+            app:tint="@color/color_accent" />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/no_log_message"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        android:text="Nessun Log"
+        android:textColor="@color/color_text_hint"
+        android:fontFamily="@font/ubuntu_bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+        android:visibility="gone"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/logs_recycler_view"
+        app:layout_constraintTop_toBottomOf="@id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/log_expanded_item"
+
+        android:clipToPadding="false"
+        android:paddingBottom="150dp"
+        >
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

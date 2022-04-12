@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/giuli/Desktop/summer_session_assignment-follen99/Prototypes/BeeSafeLoginFirebase/app/src/main/res/drawable-v24/background_item.xml" value="0.284" />
+        <entry key="..\:/Users/giuli/Desktop/summer_session_assignment-follen99/Prototypes/BeeSafeLoginFirebase/app/src/main/res/drawable-v24/ic_back.xml" value="0.284" />
+        <entry key="..\:/Users/giuli/Desktop/summer_session_assignment-follen99/Prototypes/BeeSafeLoginFirebase/app/src/main/res/drawable/ic_menu_slideshow.xml" value="0.284" />
+        <entry key="..\:/Users/giuli/Desktop/summer_session_assignment-follen99/Prototypes/BeeSafeLoginFirebase/app/src/main/res/layout/activity_logged_in.xml" value="0.32065217391304346" />
+        <entry key="..\:/Users/giuli/Desktop/summer_session_assignment-follen99/Prototypes/BeeSafeLoginFirebase/app/src/main/res/layout/activity_main.xml" value="0.32065217391304346" />
+        <entry key="..\:/Users/giuli/Desktop/summer_session_assignment-follen99/Prototypes/BeeSafeLoginFirebase/app/src/main/res/layout/activity_register_user.xml" value="0.32065217391304346" />
+        <entry key="..\:/Users/giuli/Desktop/summer_session_assignment-follen99/Prototypes/BeeSafeLoginFirebase/app/src/main/res/layout/activity_reset_password.xml" value="0.32065217391304346" />
+        <entry key="..\:/Users/giuli/Desktop/summer_session_assignment-follen99/Prototypes/BeeSafeLoginFirebase/app/src/main/res/layout/content_home_page.xml" value="0.32065217391304346" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

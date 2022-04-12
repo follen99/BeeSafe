@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SimpleNavigationController</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="api_key">AIzaSyDdMZpsuRS3rrjvPfrVhRc7GIch97J4gkg</string>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="10dp"
+    >
+
+    <Button
+        android:id="@+id/button_choose_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scegli immagine"
+        />
+
+    <EditText
+        android:id="@+id/edit_text_file_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Inserisci il nome del file"
+        android:layout_toEndOf="@id/button_choose_image"
+
+        android:layout_marginStart="16dp"
+        />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_alignBottom="@id/button_upload"
+        android:layout_marginBottom="50dp"
+        />
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/progress_bar"
+        android:layout_below="@id/edit_text_file_name"
+        android:layout_margin="10dp"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/button_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carica"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        />
+
+    <TextView
+        android:id="@+id/text_view_show_uploads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mostra caricamenti"
+        android:layout_toEndOf="@id/button_upload"
+        android:layout_alignBottom="@id/button_upload"
+        android:layout_alignTop="@id/button_upload"
+        android:gravity="center"
+        android:layout_marginStart="16dp"
+        android:textSize="16dp"
+        />
+
+
+</RelativeLayout>

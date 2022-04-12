@@ -1,0 +1,1 @@
+java -jar openapi-generator-cli.jar generate -g java-vertx-web -i Pet_Store_API.yaml -o $PWD -p groupId=it.ranauro -p artifactVersion=1.0.0-SNAPSHOT -p basePackage=it.ranauro.backend -p apiPackage=it.ranauro.backend.api -p modelPackage=it.ranauro.backend.model 

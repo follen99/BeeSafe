@@ -1,0 +1,13 @@
+.openapi-generator-ignore
+README.md
+pom.xml
+src/main/java/it/ranauro/backend/ApiResponse.java
+src/main/java/it/ranauro/backend/HttpServerVerticle.java
+src/main/java/it/ranauro/backend/api/DefaultApi.java
+src/main/java/it/ranauro/backend/api/DefaultApiHandler.java
+src/main/java/it/ranauro/backend/api/DefaultApiImpl.java
+src/main/java/it/ranauro/backend/model/Error.java
+src/main/java/it/ranauro/backend/model/NewPet.java
+src/main/java/it/ranauro/backend/model/Pet.java
+src/main/java/it/ranauro/backend/model/PetAllOf.java
+src/main/resources/openapi.yaml

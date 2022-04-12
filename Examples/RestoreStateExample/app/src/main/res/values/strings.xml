@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RestoreStateExample</string>
+    <string name="string_next">prossimo frammento</string>
+    <string name="string_prev">frammento precedente</string>
+    <string name="second_fragment_hello">Ciao dal secondo frammento!</string>
+    <string name="first_fragment_hello">Ciao dal primo frammento!</string>
+</resources>

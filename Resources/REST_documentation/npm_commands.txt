@@ -1,0 +1,4 @@
+Questi comandi vengono utilizzati per convertire 
+la specifica OpenAPI in Markdown da usare per la documentazione
+
+istallazione widdershins: npm install -g widdershins

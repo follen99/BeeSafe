@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="10dp"
+    android:background="#A0CFD5"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notesTitle"
+        android:text="Le tue note"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:background="@drawable/rounded_corner_bg"
+        android:padding="10dp"
+        android:textColor="#313D3E"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView"
+        android:layout_below="@id/notesTitle"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addNewNoteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#C9E9ED"
+        android:paddingBottom="10dp"
+        android:text="Aggiungi Nota"
+        android:textStyle="bold"
+        android:textColor="#313D3E" />
+
+
+
+</RelativeLayout>

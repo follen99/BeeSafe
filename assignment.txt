@@ -1,0 +1,24 @@
+Sviluppare un sistema client-server per la richiesta di intervento da parte del pronto soccorso o delle forze dell'ordine.
+
+Ogni richiesta è accompagnata dai seguenti metadati:
+
+   - nome del luogo
+   - una breve descrizione del problema (max 100 Caratteri) opzionale
+   - tipologia di problema  ( problema di salute , furto , atti di violenza )
+   - gravità (da 1 a 10) 
+   - urgenza ( da 1 =poco urgente a 10 =critica )
+   - una o più immagini opzionali
+   - la posizione geografica
+   - data e ora della segnalazione
+   - un numero di telefono opzionale da contattare da parte dell'ente interessato (pronto soccorso, forze dell'ordine) 
+
+L'applicazione mobile (da creare con l'Android SDK o il framework Flutter) deve permettere le operazioni essenziali (registrazione, login, invio segnalazione, elenco segnalazioni). 
+Oltre agli utenti che possono registrarsi normalmente, l'applicazione mobile prevede un utente amministratore predefinito che non puo' inviare richieste ma puo' visualizzare 
+tutte le richieste di tutti gli utenti ricercandole su mappa o in una lista per gravità, urgenza filtrando per tipologia.
+
+Il servizio di backend implementa un'API rest e può essere realizzato utilizzando Spring, Vert.X o Firebase a scelta. Le funzionalità sono le seguenti:
+   - Registrazione di un nuovo utente
+   - Login
+   - Upload di una richiesta con i relativi metadati di segnalazione (previo login)
+   - Elenco delle richieste effettuate (previo login di utente amministratore)
+   

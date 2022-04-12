@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/salute"
+        android:title="@string/salute"/>
+    <item android:id="@+id/furto"
+        android:title="@string/furto"/>
+    <item android:id="@+id/violenza"
+        android:title="@string/violenza"/>
+    <item android:id="@+id/incendio"
+        android:title="@string/incendio"/>
+    <item android:id="@+id/incidente_stradale"
+        android:title="@string/incidente_stradale"/>
+</menu>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">NoteTakingAppAdvanced</string>
+    <string name="my_notes">Le mie note</string>
+    <string name="note_subtitle">sottotitolo nota</string>
+    <string name="write_note_here">Scrivi la nota quì...</string>
+    <string name="miscellaneous">Opzioni Aggiuntive</string>
+    <string name="pcik_color">Scegli colore</string>
+    <string name="delete_note">Elimina Nota</string>
+    <string name="confirm_delete">Sei sicuro di voler eliminare la nota?</string>
+    <string name="cancel">Annulla</string>
+    <string name="api_key">AIzaSyDdMZpsuRS3rrjvPfrVhRc7GIch97J4gkg</string>
+</resources>
